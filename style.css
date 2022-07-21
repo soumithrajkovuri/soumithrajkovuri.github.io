@@ -3,8 +3,11 @@
   margin: 0%;
   font-family: "Ubuntu Mono", monospace;
   color: rgb(30, 30, 30);
+}
+body {
   background-color: rgb(195, 227, 255);
-  line-height: 2rem;
+  line-height: 3rem;
+  font-size: 1.5rem;
 }
 .container {
   margin-bottom: 30px;
@@ -34,7 +37,6 @@ p {
   filter: saturate(1);
 }
 p {
-  line-height: 1.4;
   text-align: center;
 }
 span {
@@ -98,9 +100,26 @@ h2 {
 .down_animation:hover {
   font-size: 20px;
 }
-.education{
+.education {
   padding: 10px;
-    display: flex;
-    flex-direction: column-reverse; 
+  display: flex;
+  flex-direction: column-reverse;
 }
-
+.music {
+  position: fixed;
+  bottom: 10vh;
+  right: 0px;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 3;
+}
+.music img {
+  margin: 10px;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  filter: grayscale(0);
+}
+.music img:hover {
+  filter: grayscale(100);
+  cursor: pointer;
+}
